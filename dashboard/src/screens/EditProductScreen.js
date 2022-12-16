@@ -5,9 +5,9 @@ import Header from "../components/Header";
 import EditProductMain from "../components/products/EditProductMain";
 import products from "../data/products";
 
-const ProductEditScreen = () => {
+const EditProductScreen = () => {
   let { id } = useParams();
-  const productId = products.find((p) => p._id === id);
+  const productId = products.find((p) => p.id === Number(id));
   return (
     <>
       <Sidebar />
@@ -19,4 +19,4 @@ const ProductEditScreen = () => {
   );
 };
 
-export default ProductEditScreen;
+export default EditProductScreen;

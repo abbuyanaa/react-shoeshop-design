@@ -18,7 +18,7 @@ const AddProductMain = () => {
             </div>
           </div>
           <div className="row mb-4">
-            <div className="col-xl-8 col-lg-8">
+            <div className="col-xl-12 col-lg-12">
               <div className="card mb-4 shadow-sm">
                 <div className="card-body">
                   <div className="mb-4">

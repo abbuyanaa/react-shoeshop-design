@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 // import Toast from "../LoadingError/Toast";
 import { Link } from "react-router-dom";
 
 const EditProductMain = (props) => {
   const { productId } = props;
+
+  const [name, setName] = useState(productId.name);
+  const [price, setPrice] = useState(productId.price);
+  const [countInStock, setCountInStock] = useState(productId.countInStock);
+  const [description, setDescription] = useState(productId.description);
+  const [image, setImage] = useState(productId.image);
+
   return (
     <>
       <section className="content-main" style={{ maxWidth: 1200 }}>
@@ -20,7 +27,7 @@ const EditProductMain = (props) => {
             </div>
           </div>
           <div className="row mb-4">
-            <div className="col-xl-8 col-lg-8">
+            <div className="col-xl-12 col-lg-12">
               <div className="card mb-4 shadow-sm">
                 <div className="card-body">
                   <div className="mb-4">
@@ -33,7 +40,8 @@ const EditProductMain = (props) => {
                       className="form-control"
                       id="product_title"
                       required
-                      value={productId.name}
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
                     />
                   </div>
                   <div className="mb-4">
@@ -46,7 +54,8 @@ const EditProductMain = (props) => {
                       className="form-control"
                       id="product_price"
                       required
-                      defaultValue={productId.price}
+                      value={price}
+                      onChange={(e) => setPrice(e.target.value)}
                     />
                   </div>
                   <div className="mb-4">
@@ -59,7 +68,8 @@ const EditProductMain = (props) => {
                       className="form-control"
                       id="product_price"
                       required
-                      value={productId.countInStock}
+                      value={countInStock}
+                      onChange={(e) => setCountInStock(e.target.value)}
                     />
                   </div>
                   <div className="mb-4">
@@ -69,7 +79,8 @@ const EditProductMain = (props) => {
                       className="form-control"
                       rows={7}
                       required
-                      value={productId.description}
+                      value={description}
+                      onChange={(e) => setDescription(e.target.value)}
                     />
                   </div>
                   <div className="mb-4">
@@ -77,7 +88,8 @@ const EditProductMain = (props) => {
                     <input
                       className="form-control"
                       type="text"
-                      value={productId.image}
+                      value={image}
+                      onChange={(e) => setImage(e.target.value)}
                     />
                   </div>
                 </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -23,81 +23,72 @@ const Sidebar = () => {
         <nav>
           <ul className="menu-aside">
             <li className="menu-item">
-              <NavLink
-                activeClassName="active"
-                className="menu-link"
-                to="/"
-                exact={true}
-              >
+              <Link activeclassname="active" className="menu-link" to="/">
                 <i className="icon fas fa-home" />
                 <span className="text">Dashboard</span>
-              </NavLink>
+              </Link>
             </li>
             <li className="menu-item">
-              <NavLink
-                activeClassName="active"
+              <Link
+                activeclassname="active"
                 className="menu-link"
                 to="/products"
               >
                 <i className="icon fas fa-shopping-bag" />
                 <span className="text">Products</span>
-              </NavLink>
+              </Link>
             </li>
             <li className="menu-item">
-              <NavLink
-                activeClassName="active"
+              <Link
+                activeclassname="active"
                 className="menu-link"
                 to="/addproduct"
               >
                 <i className="icon fas fa-cart-plus" />
                 <span className="text">Add product</span>
-              </NavLink>
+              </Link>
             </li>
             <li className="menu-item">
-              <NavLink
-                activeClassName="active"
+              <Link
+                activeclassname="active"
                 className="menu-link"
                 to="/category"
               >
                 <i className="icon fas fa-list" />
                 <span className="text">Categories</span>
-              </NavLink>
+              </Link>
             </li>
             <li className="menu-item">
-              <NavLink className="menu-link" to="/orders">
+              <Link className="menu-link" to="/orders">
                 <i className="icon fas fa-bags-shopping" />
                 <span className="text">Orders</span>
-              </NavLink>
+              </Link>
             </li>
             <li className="menu-item">
-              <NavLink
-                activeClassName="active"
-                className="menu-link"
-                to="/users"
-              >
+              <Link activeclassname="active" className="menu-link" to="/users">
                 <i className="icon fas fa-user" />
                 <span className="text">Users</span>
-              </NavLink>
+              </Link>
             </li>
             <li className="menu-item">
-              <NavLink
-                activeClassName="active"
+              <Link
+                activeclassname="active"
                 className="menu-link disabled"
                 to="/sellers"
               >
                 <i className="icon fas fa-store-alt" />
                 <span className="text">Sellers</span>
-              </NavLink>
+              </Link>
             </li>
             <li className="menu-item">
-              <NavLink
-                activeClassName="active"
+              <Link
+                activeclassname="active"
                 className="menu-link disabled"
                 to="/transaction"
               >
                 <i className="icon fas fa-usd-circle" />
                 <span className="text">Transactions</span>
-              </NavLink>
+              </Link>
             </li>
           </ul>
           <br />

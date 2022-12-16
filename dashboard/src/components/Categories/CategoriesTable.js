@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CategoriesTable = () => {
   return (
@@ -40,20 +41,20 @@ const CategoriesTable = () => {
               <td>Men clothes</td>
               <td className="text-end">
                 <div className="dropdown">
-                  <a
+                  <Link
                     data-bs-toggle="dropdown"
                     className="btn btn-light"
-                    href="/category"
+                    to="/category"
                   >
                     <i className="fas fa-ellipsis-h" />
-                  </a>
+                  </Link>
                   <div className="dropdown-menu">
-                    <a className="dropdown-item" href="/category">
+                    <Link className="dropdown-item" to="/category">
                       Edit info
-                    </a>
-                    <a className="dropdown-item text-danger" href="/category">
+                    </Link>
+                    <Link className="dropdown-item text-danger" to="/category">
                       Delete
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </td>
@@ -75,20 +76,20 @@ const CategoriesTable = () => {
               <td>Fashions for Women</td>
               <td className="text-end">
                 <div className="dropdown">
-                  <a
+                  <Link
                     data-bs-toggle="dropdown"
                     className="btn btn-light"
-                    href="/category"
+                    to="/category"
                   >
                     <i className="fas fa-ellipsis-h" />
-                  </a>
+                  </Link>
                   <div className="dropdown-menu">
-                    <a className="dropdown-item" href="/category">
+                    <Link className="dropdown-item" to="/category">
                       Edit info
-                    </a>
-                    <a className="dropdown-item text-danger" href="/category">
+                    </Link>
+                    <Link className="dropdown-item text-danger" to="/category">
                       Delete
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </td>
@@ -110,20 +111,20 @@ const CategoriesTable = () => {
               <td>Clothes for kids</td>
               <td className="text-end">
                 <div className="dropdown">
-                  <a
+                  <Link
                     data-bs-toggle="dropdown"
                     className="btn btn-light"
-                    href="/category"
+                    to="/category"
                   >
                     <i className="fas fa-ellipsis-h" />
-                  </a>
+                  </Link>
                   <div className="dropdown-menu">
-                    <a className="dropdown-item" href="/category">
+                    <Link className="dropdown-item" to="/category">
                       Edit info
-                    </a>
-                    <a className="dropdown-item text-danger" href="/category">
+                    </Link>
+                    <Link className="dropdown-item text-danger" to="/category">
                       Delete
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </td>

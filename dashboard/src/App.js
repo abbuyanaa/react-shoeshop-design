@@ -11,7 +11,7 @@ import OrderDetailScreen from "./screens/OrderDetailScreen";
 import AddProductScreen from "./screens/AddProductScreen";
 import LoginScreen from "./screens/LoginScreen";
 import UsersScreen from "./screens/UsersScreen";
-import ProductEditScreen from "./screens/ProductEditScreen";
+import EditProductScreen from "./screens/EditProductScreen";
 import NotFoundScreen from "./screens/NotFoundScreen";
 
 function App() {
@@ -25,9 +25,9 @@ function App() {
         <Route path="/order" element={<OrderDetailScreen />} />
         <Route path="/addproduct" element={<AddProductScreen />} />
         <Route path="/users" element={<UsersScreen />} />
-        <Route path="/product/:id/edit" element={<ProductEditScreen />} />
+        <Route path="/product/:id/edit" element={<EditProductScreen />} />
         <Route path="/login" element={<LoginScreen />} />
-        <Route path="/*" element={<NotFoundScreen />} />
+        <Route path="*" element={<NotFoundScreen />} />
       </Routes>
     </>
   );
